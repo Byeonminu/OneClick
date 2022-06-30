@@ -31,51 +31,18 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-//
-//        this.InitializeMovieData();
-//
-////        HomeViewModel homeViewModel =
-////                new ViewModelProvider(this).get(HomeViewModel.class);
-//
-//        binding = FragmentHomeBinding.inflate(inflater, container, false);
-//
-//
-////        listView = (ListView) getView().findViewById(R.id.listview);
-//
-//        myAdapter = new MyAdapter(getActivity(), SampleData);
-//        binding.listView.setAdapter(myAdapter);
-////        listView.setAdapter(myAdapter);
-////        binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-////            @Override
-////            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-////
-////            }
-////        });
-//        View root = binding.getRoot();
-//
-//        return root;
 
         this.InitializeMovieData();
-
-//        HomeViewModel homeViewModel =
-//                new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-//        final TextView textView = binding.textHome;
-//        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         myAdapter = new MyAdapter(getActivity(), SampleData);
         binding.listView.setAdapter(myAdapter);
 
         return root;
     }
-//
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//    }
 
     @Override
     public void onDestroyView() {
@@ -87,8 +54,14 @@ public class HomeFragment extends Fragment {
     {
         SampleData = new ArrayList<Data>();
 
-        SampleData.add(new Data("미션임파서블","010-1234-1234"));
-        SampleData.add(new Data("아저씨","010-5342-2421"));
-        SampleData.add(new Data("어벤져스","010-2943-3915"));
+        SampleData.add(new Data("홍길동","010-1234-1234"));
+        SampleData.add(new Data("유재석","010-5342-2421"));
+        SampleData.add(new Data("김태형","010-2943-3915"));
+        SampleData.add(new Data("전정국","010-9513-3563"));
+        SampleData.add(new Data("민윤기","010-6243-5915"));
+        SampleData.add(new Data("김남준","010-2143-6813"));
+        SampleData.add(new Data("지민","010-2942-6235"));
+        SampleData.add(new Data("진","010-3532-7343"));
+
     }
 }
