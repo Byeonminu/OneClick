@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.home;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,9 +39,9 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-
         myAdapter = new MyAdapter(getActivity(), SampleData);
         binding.listView.setAdapter(myAdapter);
+        binding.listView.setBackgroundColor(Color.BLACK);
         binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
