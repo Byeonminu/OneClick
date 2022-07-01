@@ -41,7 +41,7 @@ public class HomeFragment extends Fragment {
 
         myAdapter = new MyAdapter(getActivity(), SampleData);
         binding.listView.setAdapter(myAdapter);
-        binding.listView.setBackgroundColor(Color.BLACK);
+        binding.listView.setBackgroundColor(Color.WHITE);
         binding.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {

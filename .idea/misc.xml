@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/drawable/phone_image.xml" value="0.1955" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/fragment_home.xml" value="0.1875" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/grid_view.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/list_view.xml" value="0.264" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1875" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.139" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.139" />
