@@ -24,8 +24,9 @@ import java.util.ArrayList;
 public class DashboardFragment extends Fragment {
 
     private FragmentDashboardBinding binding;
-    String[] numberWord = {"one", "two", "three", "four"};
-    int[] people = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four };
+    String[] numberWord = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+    int[] people = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four,
+            R.drawable.five,R.drawable.six, R.drawable.seven, R.drawable.eight, R.drawable.nine, R.drawable.ten};
     private ImageAdapter imageAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
