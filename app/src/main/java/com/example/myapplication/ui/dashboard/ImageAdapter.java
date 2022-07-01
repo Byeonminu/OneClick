@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,14 +17,13 @@ import java.util.ArrayList;
 public class ImageAdapter extends BaseAdapter {
     Context mContext = null;
     LayoutInflater mLayoutInflater = null;
-    int[] arrNumberImage;
-    String[] arrNumberWord;
+    public int[] arrNumberImage = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four,
+            R.drawable.five,R.drawable.six, R.drawable.seven, R.drawable.eight, R.drawable.nine, R.drawable.ten};
+    public String[] arrNumberWord = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
 
-    public ImageAdapter(Context mContext,  int[] arrNumberImage, String[] arrNumberWord) {
+    public ImageAdapter(Context mContext) {
         this.mContext = mContext;
         this.mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        this.arrNumberImage = arrNumberImage;
-        this.arrNumberWord = arrNumberWord;
     }
 
     @Override
@@ -33,7 +33,7 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return arrNumberWord[position];
+        return arrNumberImage[position];
     }
 
     @Override
@@ -47,8 +47,8 @@ public class ImageAdapter extends BaseAdapter {
             convertView = mLayoutInflater.inflate(R.layout.grid_view, null);
 
         ImageView imageView = (ImageView) convertView.findViewById(R.id.picture);
-
         imageView.setImageResource(arrNumberImage[position]);
+        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         return convertView;
     }
