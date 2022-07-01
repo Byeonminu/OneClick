@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/drawable/phone.xml" value="0.2305" />
         <entry key="app/src/main/res/drawable/phone_image.xml" value="0.2305" />
         <entry key="app/src/main/res/layout/ListView.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_full_screen.xml" value="0.11702575683593752" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.215311004784689" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.150286865234375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22216237386067716" />

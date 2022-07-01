@@ -11,7 +11,7 @@
         android:id="@+id/picture"
         android:layout_width="wrap_content"
         android:layout_height="130dp"
-        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
         />
 
 </LinearLayout>
