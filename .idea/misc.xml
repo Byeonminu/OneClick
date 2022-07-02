@@ -5,9 +5,16 @@
       <map>
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1955" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/drawable/ic_add.xml" value="0.2315" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/drawable/phone_image.xml" value="0.1955" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/action_btn.xml" value="0.225" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/activity_add.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/activity_full_screen.xml" value="0.225" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/activity_main.xml" value="0.1875" />
-        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/fragment_home.xml" value="0.1875" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/click_button.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/fragment_dashboard.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/fragment_notifications.xml" value="0.19157608695652173" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/grid_view.xml" value="0.20697463768115942" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/layout/list_view.xml" value="0.264" />
         <entry key="..\:/Users/Jina Kim/AndroidStudioProjects/android_app_w1_phone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1875" />
@@ -19,14 +26,13 @@
         <entry key="app/src/main/res/drawable/phone.xml" value="0.2305" />
         <entry key="app/src/main/res/drawable/phone_image.xml" value="0.2305" />
         <entry key="app/src/main/res/layout/ListView.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/activity_full_screen.xml" value="0.11702575683593752" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.215311004784689" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.150286865234375" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22216237386067716" />
         <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.18704710144927536" />
         <entry key="app/src/main/res/layout/grid_view.xml" value="0.19270833333333334" />
-        <entry key="app/src/main/res/layout/list_view.xml" value="0.2322499593098959" />
+        <entry key="app/src/main/res/layout/list_view.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/listview.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.45379079182942705" />
       </map>

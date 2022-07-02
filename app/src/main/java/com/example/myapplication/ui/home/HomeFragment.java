@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.home;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,9 +17,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.myapplication.AddActivity;
+import com.example.myapplication.FullScreenActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentHomeBinding;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +33,7 @@ public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
     private ListView listView;
-    private ArrayList<Data> SampleData;
+    public ArrayList<Data> SampleData;
     private MyAdapter myAdapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -37,6 +42,7 @@ public class HomeFragment extends Fragment {
         this.InitializeMovieData();
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
+        //root:
         View root = binding.getRoot();
 
         myAdapter = new MyAdapter(getActivity(), SampleData);
@@ -49,6 +55,14 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), data.getName() + " " + data.getPhone(), Toast.LENGTH_LONG).show();
 
             }
+        });
+        binding.addBtn.setOnClickListener(new AdapterView.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), AddActivity.class);
+                startActivity(intent);
+            }
+
         });
 
 
@@ -75,6 +89,8 @@ public class HomeFragment extends Fragment {
         SampleData.add(new Data("지민","010-2942-6235"));
         SampleData.add(new Data("진","010-3532-7343"));
         SampleData.add(new Data("제이홉","010-6212-5531"));
+
+        //JSONObject obj=new JSONObject();
 
 
     }
