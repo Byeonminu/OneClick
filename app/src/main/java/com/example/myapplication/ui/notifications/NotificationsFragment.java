@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.notifications;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -9,6 +10,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +22,9 @@ import androidx.lifecycle.ViewModelProvider;
 import com.bluehomestudio.luckywheel.LuckyWheel;
 import com.bluehomestudio.luckywheel.OnLuckyWheelReachTheTarget;
 import com.bluehomestudio.luckywheel.WheelItem;
+import com.example.myapplication.FullScreenActivity;
 import com.example.myapplication.R;
+import com.example.myapplication.RouletteActivity;
 import com.example.myapplication.databinding.FragmentNotificationsBinding;
 
 import java.util.ArrayList;
@@ -67,6 +72,15 @@ public class NotificationsFragment extends Fragment {
                 Random random = new Random();
                 point = String.valueOf(random.nextInt(6)+1); // 1 ~ 6
                 binding.luckWheel.rotateWheelTo(Integer.parseInt(point));
+            }
+        });
+
+        binding.addMenu.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), RouletteActivity.class);
+                startActivity(intent);
+
             }
         });
 
