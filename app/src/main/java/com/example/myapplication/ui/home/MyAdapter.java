@@ -40,7 +40,7 @@ public class MyAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView == null)
-            convertView = mLayoutInflater.inflate(R.layout.list_view, null);
+            convertView = mLayoutInflater.inflate(R.layout.list_view, parent, false);
 
         TextView nameView = (TextView) convertView.findViewById(R.id.name);
         TextView phoneView = (TextView) convertView.findViewById(R.id.phone);
