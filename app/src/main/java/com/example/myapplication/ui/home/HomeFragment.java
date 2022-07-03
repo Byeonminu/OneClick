@@ -2,6 +2,7 @@ package com.example.myapplication.ui.home;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,7 +53,9 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Data data = myAdapter.getItem(position);
-                Toast.makeText(getContext(), data.getName() + " " + data.getPhone(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getContext(), data.getName() + " " + data.getPhone(), Toast.LENGTH_LONG).show();
+                String tel="tel:"+data.getPhone();
+                startActivity(new Intent("android.intent.action.DIAL", Uri.parse(tel)));
 
             }
         });

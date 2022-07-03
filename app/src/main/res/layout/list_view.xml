@@ -40,22 +40,21 @@
              />
 
         <ImageView
+            android:id="@+id/telephone"
             android:layout_width="20dp"
             android:layout_height="20dp"
 
             android:layout_marginRight="20dp"
             android:layout_gravity="right"
             android:src="@drawable/telephone"
-
-
         />
 
         <ImageView
+            android:id="@+id/messenger"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_gravity="right"
             android:src="@drawable/messenger"
-
         />
 
 
