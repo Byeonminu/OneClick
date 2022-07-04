@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.myapplication.AddActivity;
+import com.example.myapplication.ClickActivity;
 import com.example.myapplication.FullScreenActivity;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
@@ -54,9 +55,13 @@ public class HomeFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Data data = myAdapter.getItem(position);
                 //Toast.makeText(getContext(), data.getName() + " " + data.getPhone(), Toast.LENGTH_LONG).show();
-                String tel="tel:"+data.getPhone();
-                startActivity(new Intent("android.intent.action.DIAL", Uri.parse(tel)));
+                Intent intent4=new Intent(getActivity(), ClickActivity.class);
+                intent4.putExtra("position",position);
+                intent4.putParcelableArrayListExtra("sampleData",SampleData);
+                startActivity(intent4);
 
+//              String tel="tel:"+data.getPhone();
+//              startActivity(new Intent("android.intent.action.DIAL", Uri.parse(tel)));
             }
         });
         binding.addBtn.setOnClickListener(new AdapterView.OnClickListener() {
