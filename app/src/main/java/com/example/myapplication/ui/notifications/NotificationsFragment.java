@@ -26,16 +26,21 @@ import com.example.myapplication.FullScreenActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.RouletteActivity;
 import com.example.myapplication.databinding.FragmentNotificationsBinding;
+import com.example.myapplication.ui.home.Data;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
+
 public class NotificationsFragment extends Fragment {
 
     private FragmentNotificationsBinding binding;
-
-    List<WheelItem> wheelItems ;
+    public List<WheelItem> wheelItems;
+    public RList Data;
 
     String point;
 
@@ -46,6 +51,8 @@ public class NotificationsFragment extends Fragment {
         View root = binding.getRoot();
 
         //점수판 데이터 생성
+        Data = new RList(new ArrayList<>());
+        Data.Add("a");
         this.generateWheelItems();
 
         //점수판 타겟 정해지면 이벤트 발생
@@ -106,17 +113,9 @@ public class NotificationsFragment extends Fragment {
 
         Bitmap bitmap = drawableToBitmap(d);
 
-        wheelItems.add(new WheelItem(Color.parseColor("#F44336"), bitmap, "100 $"));
-
-        wheelItems.add(new WheelItem(Color.parseColor("#E91E63"), bitmap, "200 $"));
-
-        wheelItems.add(new WheelItem(Color.parseColor("#9C27B0"), bitmap, "300 $"));
-
-        wheelItems.add(new WheelItem(Color.parseColor("#3F51B5"), bitmap, "400 $"));
-
-        wheelItems.add(new WheelItem(Color.parseColor("#1E88E5"), bitmap, "500 $"));
-
-        wheelItems.add(new WheelItem(Color.parseColor("#009688"), bitmap, "600 $"));
+        for (int i = 0; i < Data.Size(); i++) {
+            wheelItems.add(new WheelItem(Color.parseColor("#F44336"), bitmap, Data.Get(i)));
+        }
 
         //점수판에 데이터 넣기
         binding.luckWheel.addWheelItems(wheelItems);
