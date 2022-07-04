@@ -1,6 +1,8 @@
 package com.example.myapplication.ui.dashboard;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,8 +49,13 @@ public class ImageAdapter extends BaseAdapter {
             convertView = mLayoutInflater.inflate(R.layout.grid_view, null);
 
         ImageView imageView = (ImageView) convertView.findViewById(R.id.picture);
+        @SuppressLint("UseCompatLoadingForDrawables") GradientDrawable drawable=(GradientDrawable) mContext.getDrawable(R.drawable.background_rounding);
+
+
         imageView.setImageResource(arrNumberImage[position]);
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        imageView.setBackground(drawable);
+        imageView.setClipToOutline(true);
 
         return convertView;
     }
