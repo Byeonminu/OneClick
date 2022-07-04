@@ -32,6 +32,7 @@ public class AddActivity extends Activity {
                 String name=addNameEdit.getText().toString();
                 String phone=addPhoneEdit.getText().toString();
 
+
                 /*HomeFragment data=new HomeFragment();
                 data.SampleData.add(new Data(name,phone));
 */
@@ -42,4 +43,5 @@ public class AddActivity extends Activity {
 
         });
     }
+
 }
