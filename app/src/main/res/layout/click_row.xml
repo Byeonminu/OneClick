@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#3BD6BC79"
     tools:context=".AddActivity">
 
     <ImageView
