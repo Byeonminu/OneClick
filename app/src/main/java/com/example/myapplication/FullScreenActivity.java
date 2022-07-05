@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class FullScreenActivity extends AppCompatActivity {
 
     ImageView imageView;
-    ArrayList<Uri> mArrayUri = new ArrayList<Uri>();
+//    ArrayList<Uri> mArrayUri = new ArrayList<Uri>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +30,11 @@ public class FullScreenActivity extends AppCompatActivity {
         Intent i = getIntent();
 
         int position = i.getExtras().getInt("id");
+        ArrayList<Uri> data = i.getExtras().getParcelableArrayList("data");
 
-        ImageAdapter imageAdapter = new ImageAdapter(this, mArrayUri);
-        imageView.setImageURI(mArrayUri.get(position));
+
+//        ImageAdapter imageAdapter = new ImageAdapter(this, data);
+        imageView.setImageURI(data.get(position));
 
     }
 }

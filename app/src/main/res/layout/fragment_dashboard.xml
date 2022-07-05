@@ -45,79 +45,51 @@
                 android:backgroundTint="#3BFFFFFF"
                 android:fontFamily="sans-serif-condensed-light"
                 android:src="@drawable/image"
-
-
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
-            <!--<LinearLayout
-                android:layout_width="420dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="left"
-                    android:src="@drawable/heart"
-                    android:paddingTop="2dp"
-                    /
 
-                <ImageView
-                    android:layout_width="170dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="right"
-                    android:src="@drawable/heart"
-                    android:paddingTop="2dp"/>
-
-            </LinearLayout>-->
-
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="5dp"
+                android:background="#3BD6BC79"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="?attr/actionBarSize"
+                android:verticalSpacing="10dp"
+                tools:ignore="MissingConstraints"
+                tools:listitem="@layout/grid_view" />
         </LinearLayout>
 
 
-    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_marginTop="100dp"
-        android:id="@+id/gridView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:columnWidth="90dp"
-        android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="2"
-
-        android:paddingTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:gravity="center"
-        android:paddingBottom="?attr/actionBarSize"
-
-        android:background="#3BD6BC79"
-
-        tools:listitem="@layout/grid_view"
-        tools:ignore="MissingConstraints"
-        >
 
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </GridView>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+               android:src="@drawable/ic_add"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                app:backgroundTint="#FFFFFF"
+                app:fabCustomSize="40dp" />
+        </FrameLayout>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/addImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:src="@drawable/ic_add"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="5dp"
-            app:backgroundTint="#FFFFFF"
-            app:fabCustomSize="40dp"/>
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
