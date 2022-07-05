@@ -23,7 +23,7 @@ One Click App은 연락처, 갤러리, 알람 기능을 가지고 있는 기본�
 ### 탭 1 . Contacts
 <div>
 <image src="./app/src/main/res/drawable/tab_phone_1.jpg" width="200"/>
-<image src="./app/src/main/res/drawable/tab_phone_2.jpg" width="200"/>
+<image src="./app/src/main/res/drawable/tab_phone2.jpg" width="200"/>
 </div>
 
 
