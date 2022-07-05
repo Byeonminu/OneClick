@@ -112,6 +112,7 @@ public class RingtonePlayingService extends Service {
     public void onDestroy() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
+        super.onDestroy();
         Log.d("onDestory() 실행", "서비스 파괴");
 
     }
