@@ -1,14 +1,25 @@
 # <image src="./app/src/main/res/drawable/icon.png" width="30"/> One Click
 
-#### 팀원 :김지나, 변민우
+## 개발 팀원
+- KAIST 새내기과정학부 김지나
+- POSTECH 컴퓨터공학과 변민우
+
 <br>
 
-이 앱은 연락처, 갤러리, 알람 기능을 가지고 있는 기본적인 앱이다.
+## 개발 환경
+- OS: Android (minSdk: 26, targetSdk: 32)
+- Language: Java
+- IDE: Android Studio
+- Target Device: Galaxy S7
 
+
+<br>
+
+## 앱 소개
+One Click App은 연락처, 갤러리, 알람 기능을 가지고 있는 기본적인 앱이다. <br>
 하단 3개의 탭을 통해 연락처, 갤러리, 알람 기능에 접근할 수 있다.
 <br>
 
-* * * 
 ### 탭 1 . 연락처
 <div>
 <image src="./app/src/main/res/drawable/tab_phone_1.jpg" width="200"/>
