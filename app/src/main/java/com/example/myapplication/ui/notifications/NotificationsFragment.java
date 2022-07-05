@@ -42,8 +42,6 @@ public class NotificationsFragment extends Fragment {
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        Intent intent = new Intent(getActivity(), AlarmReceiver.class);
-
         binding.save.setOnClickListener(new AdapterView.OnClickListener() {
 
             @Override
@@ -54,42 +52,41 @@ public class NotificationsFragment extends Fragment {
                 int minute = binding.timePicker.getMinute();
                 calendar.set(Calendar.HOUR_OF_DAY, hour);
                 calendar.set(Calendar.MINUTE, minute);
-                Toast.makeText(getActivity(), "Alarm 예정 " + hour + "시 " + minute + "분", Toast.LENGTH_SHORT).show();
 
                 if (calendar.before(Calendar.getInstance())) {
                     calendar.add(Calendar.DATE, 1);
                 }
 
-                alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
+                AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 
                 if (alarmManager != null) {
-
-                    intent.putExtra("state", "alarm on");
+                    Intent intent = new Intent(getActivity(), AlarmReceiver.class);
 //                    intent.putExtra("Ringtone",getResources().getResourceName(R.raw.));
-                    alarmIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                    PendingIntent alarmIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-//                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-//                            AlarmManager.INTERVAL_DAY, alarmIntent);
-                    alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), alarmIntent);
-                }
-                ;
+                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                            AlarmManager.INTERVAL_DAY, alarmIntent);
+
+                    Toast.makeText(getActivity(), "알람이 저장되었습니다.", Toast.LENGTH_LONG).show();
+
+                };
             }
 
         });
 
-        binding.finish.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(), "Alarm 종료", Toast.LENGTH_SHORT).show();
-                // 알람매니저 취소
-                alarmManager.cancel(alarmIntent);
-
-                intent.putExtra("state", "alarm off");
-
-                // 알람취소
-                getActivity().sendBroadcast(intent);
-            }
-        });
+//        binding.finish.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(getActivity(), "Alarm 종료", Toast.LENGTH_SHORT).show();
+//                // 알람매니저 취소
+//                alarmManager.cancel(alarmIntent);
+//
+//                intent.putExtra("state", "alarm off");
+//
+//                // 알람취소
+//                getActivity().sendBroadcast(intent);
+//            }
+//        });
 
 //        binding.timePicker.setIs24HourView(true);
 //
