@@ -15,6 +15,7 @@
 <image src="./app/src/main/res/drawable/tab_gallery_2.jpg" width="200"/>
 </div>
 
+
 휴대폰 연락처 정보를 가져와 목록을 구성한다.
 
 동기화 버튼을 클릭하면 연락처에 저장된 정보를 Listview로 보여준다. "+" 버튼을 클릭하였을 때, 주소록과 연동되어 새로운 연락처를 추가할 수 있고, 동기화 버튼을 누르면 추가된 연락처까지 함께 Listview로 보여준다.
