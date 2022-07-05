@@ -37,7 +37,7 @@ public class DashboardFragment extends Fragment {
     List<String> imagesEncodedList;
     private GridView gvGallery;
     private ImageAdapter galleryAdapter;
-    ArrayList<Uri> mArrayUri=new ArrayList<>();
+    ArrayList<Uri> mArrayUri = new ArrayList<>();
 
 //    String[] numberWord = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
 //    int[] people = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four,
@@ -62,6 +62,7 @@ public class DashboardFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), FullScreenActivity.class);
                 intent.putExtra("id", position);
+                intent.putExtra("data", mArrayUri);
                 startActivity(intent);
             }
         });
@@ -108,27 +109,6 @@ public class DashboardFragment extends Fragment {
                 String[] filePathColumn = { MediaStore.Images.Media.DATA };
                 imagesEncodedList = new ArrayList<String>();
                 if(data.getData()!=null){
-//                    Log.v("0301: ","getData()!=null");
-//                    Uri mImageUri=data.getData();
-//
-//                    // Get the cursor
-//                    Cursor cursor = requireActivity().getContentResolver().query(mImageUri,
-//                            filePathColumn, null, null, null);
-//                    // Move to first row
-//                    cursor.moveToFirst();
-//
-//                    int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-//                    imageEncoded  = cursor.getString(columnIndex);
-//                    cursor.close();
-//
-//                    //ArrayList<Uri> mArrayUri = new ArrayList<Uri>();
-//                    mArrayUri.add(mImageUri);
-//                    galleryAdapter = new ImageAdapter(requireActivity().getApplicationContext(),mArrayUri);
-//                    binding.gridView.setAdapter(galleryAdapter);
-//                    binding.gridView.setVerticalSpacing(binding.gridView.getHorizontalSpacing());
-//                    ViewGroup.MarginLayoutParams mlp = (ViewGroup.MarginLayoutParams) binding.gridView
-//                            .getLayoutParams();
-//                    mlp.setMargins(0, binding.gridView.getHorizontalSpacing(), 0, 0);
                     if (data.getClipData() != null) {
                         ClipData mClipData = data.getClipData();
                         //ArrayList<Uri> mArrayUri = new ArrayList<Uri>();
