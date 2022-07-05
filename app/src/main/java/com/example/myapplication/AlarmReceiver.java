@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -48,7 +49,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setAutoCancel(true)
                 .setContentTitle("알람")
                 .setContentText("울림")
-                .setContentIntent(busRoutePendingIntent);
+                .setContentIntent(busRoutePendingIntent)
+                .setSound(Uri.parse("android.resource://my.package.name/raw/notification"));
 
 
         final NotificationManager notificationManager=(NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
