@@ -28,10 +28,11 @@
         <entry key="app/src/main/res/drawable/phone_image.xml" value="0.2305" />
         <entry key="app/src/main/res/drawable/textview_box.xml" value="0.2747955322265625" />
         <entry key="app/src/main/res/layout/ListView.xml" value="0.19270833333333334" />
+        <entry key="app/src/main/res/layout/activity_add.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_full_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.215311004784689" />
         <entry key="app/src/main/res/layout/click_row.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.18947906494140626" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23222961425781252" />
         <entry key="app/src/main/res/layout/fragment_home2.xml" value="0.15520833333333334" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.18704710144927536" />
