@@ -1,4 +1,4 @@
-# <image src="./app/src/main/res/drawable/icon.png" width="30"/>One Click
+# <image src="./app/src/main/res/drawable/icon.png" width="30"/> One Click
 
 #### 팀원 : 김지나, 변민우
 <br>
