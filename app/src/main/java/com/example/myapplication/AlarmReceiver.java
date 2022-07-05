@@ -62,8 +62,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                 .setAutoCancel(true)
-                .setContentTitle("알람")
-                .setContentText("울림")
+                .setContentTitle("One Click")
+                .setContentText("띠리링")
                 .setContentIntent(busRoutePendingIntent);
 
 
