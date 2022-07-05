@@ -10,10 +10,10 @@
 
 * * * 
 ### 탭 1 . 연락처
-<figure class="half>
+<div>
 <image src="./app/src/main/res/drawable/tab_phone_1.jpg" width="200"/>
 <image src="./app/src/main/res/drawable/tab_gallery_2.jpg" width="200"/>
-figure>
+</div>
 
 휴대폰 연락처 정보를 가져와 목록을 구성한다.
 
@@ -24,10 +24,10 @@ figure>
 <br>
 
 ### 탭 2 . 갤러리
-<figure class="half>
+<div>
 <image src="./app/src/main/res/drawable/tab_gallery_1.jpg" width="200"/>
 <image src="./app/src/main/res/drawable/tab_fullscreen.jpg" width="200"/>
-figure>
+</div>
 
 
 휴대폰 갤러리에서 사진을 가져와 목록을 구성한다.
