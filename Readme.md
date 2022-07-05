@@ -28,10 +28,10 @@ One Click App은 연락처, 갤러리, 알람 기능을 가지고 있는 기본�
 
 
 + 앱을 실행하면 가장 먼저 뜨는 탭을 연락처 탭으로 설정한다.
-+ 동기화 버튼을 클릭하면 ListView를 활용해 주소록에서 불러온 연락처를 보여준다.
++ 동기화 버튼을 클릭하면 `ListView`를 활용해 주소록에서 불러온 연락처를 보여준다.
 + "+" 버튼을 눌러주면 주소록 연락처 추가 앱으로 넘어가 연락처 추가가 가능하다.
-+ (HomeFragment -> ClickActivity)
-  + 각 목록을 클릭하면 ClickActivity로 넘어가게 되고, 이때 HomeFragment로부터 받은 name, number을 띄워준다.
++ (`HomeFragment` -> `ClickActivity`)
+  + 각 목록을 클릭하면 `ClickActivity`로 넘어가게 되고, 이때 `HomeFragment`로부터 받은 name, number을 띄워준다.
   + 전화 버튼을 클릭하면 number가 전화 앱으로 넘어가고, 해당 번호로 전화가 가능하다.
   + 문자 버튼을 클릭하면 number가 문자 앱으로 넘어가고, 해당 번호로 문자가 가능하다.
 
