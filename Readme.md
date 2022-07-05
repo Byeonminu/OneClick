@@ -1,4 +1,4 @@
-# Open Up // Unite // Time Saving // Bundle //One Click
+# <image src="./app/src/main/res/drawable/icon.png" width="50"/>One Click
 
 #### 팀원 : 김지나, 변민우
 <br>
@@ -11,6 +11,7 @@
 * * * 
 ### 탭 1 . 연락처
 <image src="./app/src/main/res/drawable/tab_phone.jpg" width="200"/>
+<image src="./app/src/main/res/drawable/tab_phone_1.jpg" width="200"/>
 
 휴대폰 연락처 정보를 가져와 목록을 구성한다.
 
@@ -21,7 +22,9 @@
 <br>
 
 ### 탭 2 . 갤러리
-<image src="./app/src/main/res/drawable/tab_gallery.jpg" width="200">
+<image src="./app/src/main/res/drawable/tab_gallery.jpg" width="200"/>
+<image src="./app/src/main/res/drawable/tab_gallery1.jpg" width="200"/>
+<image src="./app/src/main/res/drawable/tab_gallery2.jpg" width="200"/>
 
 
 휴대폰 갤러리에서 사진을 가져와 목록을 구성한다.
@@ -34,7 +37,7 @@
 <br>
 
 ### 탭 3 . 알람
-<image src="./app/src/main/res/drawable/tab_gallery.jpg" width="200">
+<image src="./app/src/main/res/drawable/tab_alarm.jpg" width="200"/>
 
 
 알람을 설정하고 알람이 울린 이후 알람을 끌 수 있다.

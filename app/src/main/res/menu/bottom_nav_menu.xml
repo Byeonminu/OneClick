@@ -4,16 +4,16 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/phone_image"
-        android:title="연락처" />
+        android:title="Contacts" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="갤러리" />
+        android:title="Gallery" />
 
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="알람" />
+        android:title="Alarm" />
 
 </menu>

@@ -13,7 +13,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher_new"
-        android:label="N1"
+        android:label="One Click"
         android:roundIcon="@mipmap/ic_launcher_new_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
@@ -30,7 +30,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="N1">
+            android:label="One Click">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

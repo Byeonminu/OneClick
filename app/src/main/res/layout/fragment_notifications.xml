@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#3BD6BC79"
     tools:context=".ui.notifications.NotificationsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
@@ -43,32 +42,44 @@
             android:backgroundTint="@color/white"
             android:background="@drawable/textview_box"
             android:fontFamily="sans-serif-condensed-light"
-            android:src="@drawable/alarm"
-
+            android:src="@drawable/alarm2"
+            android:padding="7dp"
             android:textSize="16dp"
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
-        <TimePicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:timePickerMode="spinner"
-            android:paddingTop="100dp"
-            android:id="@+id/time_picker" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#3BD6BC79"
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="저장"
-            android:id="@+id/save"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="종료"
-            android:id="@+id/finish"/>
+            >
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:timePickerMode="spinner"
+                android:paddingTop="100dp"
+                android:id="@+id/time_picker" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set"
+                android:layout_gravity="center"
+                android:id="@+id/save"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Off"
+                android:layout_gravity="center"
+                android:id="@+id/finish"/>
+        </LinearLayout>
+
+
     </LinearLayout>
 
 

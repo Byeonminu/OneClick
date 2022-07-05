@@ -24,7 +24,7 @@
             android:fontFamily="sans-serif-condensed-light"
             android:paddingTop="5dp"
             android:paddingBottom="9dp"
-            android:text="Phone."
+            android:text="Contacts."
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="30dp"
