@@ -21,6 +21,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.myapplication.AddActivity;
 import com.example.myapplication.AlarmReceiver;
 import com.example.myapplication.MainActivity;
+import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentNotificationsBinding;
 
 import java.util.Calendar;
@@ -56,6 +57,7 @@ public class NotificationsFragment extends Fragment {
 
                 if (alarmManager != null) {
                     Intent intent = new Intent(getActivity(), AlarmReceiver.class);
+//                    intent.putExtra("Ringtone",getResources().getResourceName(R.raw.));
                     PendingIntent alarmIntent = PendingIntent.getBroadcast(getActivity(), 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
