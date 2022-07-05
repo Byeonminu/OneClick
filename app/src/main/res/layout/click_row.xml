@@ -4,60 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+
     android:orientation="vertical"
-    android:background="#3BD6BC79"
+    android:backgroundTint="#3BD6BC79"
     tools:context=".AddActivity">
 
-    <ImageView
-        android:id="@+id/person_image"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-
-        android:layout_gravity="center"
-        android:src="@drawable/person_image"
-
-        android:layout_centerHorizontal="true"
-        />
-
-    <TextView
-        android:id="@+id/show_name"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="이름"
-        android:inputType="text"/>
-    <TextView
-        android:id="@+id/show_phone"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="전화번호"
-        android:maxLength="13"
-        android:inputType="phone"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        >
 
-        android:gravity="center">
-        <Button
-            android:id="@+id/call_btn"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/telephone"
-            android:layout_marginRight="70dp"
-            />
-        <Button
-            android:id="@+id/message_btn"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/messenger"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="70dp"
-            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/textview_box"
+            android:backgroundTint="#3BD6BC79"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingTop="5dp"
+            android:paddingBottom="9dp"
+            android:text="Phone."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/textview_box"
+            android:fontFamily="sans-serif-condensed-light"
+            android:src="@drawable/phone_image"
+
+            android:textSize="16dp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
     </LinearLayout>
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#3BD6BC79"
+        tools:context=".AddActivity"
+        >
+        <ImageView
+            android:id="@+id/person_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/person_image"
+
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/show_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="이름"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed-light"/>
+        <TextView
+            android:id="@+id/show_phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="전화번호"
+            android:maxLength="13"
+            android:inputType="phone"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-light"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+            <Button
+                android:id="@+id/call_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/telephone"
+
+                android:layout_marginRight="70dp"
+                />
+            <Button
+                android:id="@+id/message_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/messenger"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"
+                />
+            </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
