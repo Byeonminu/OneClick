@@ -1,6 +1,6 @@
 # <image src="./app/src/main/res/drawable/icon.png" width="30"/> One Click
 
-#### 팀원 : 김지나, 변민우
+#### 팀원 :김지나, 변민우
 <br>
 
 이 앱은 연락처, 갤러리, 알람 기능을 가지고 있는 기본적인 앱이다.
@@ -41,8 +41,10 @@
 <br>
 
 ### 탭 3 . 알람
+<div>
 <image src="./app/src/main/res/drawable/tab_alarm.jpg" width="200"/>
-
+<image src="./app/src/main/res/drawable/alarm_check.jpg" width="200"/>
+</div>
 
 알람을 설정하고 알람이 울린 이후 알람을 끌 수 있다.
 
