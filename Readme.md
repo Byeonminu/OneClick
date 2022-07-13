@@ -7,11 +7,17 @@
 <br>
 
 ## 개발 환경
+Client)
 - OS: Android (minSdk: 26, targetSdk: 32)
 - Language: Java
 - IDE: Android Studio
 - Target Device: Galaxy S7
 
+Server)
+- Stack: Nodejs
+- Language: javascript
+- Framework: Express
+- DataBase: Mysql
 
 <br>
 
