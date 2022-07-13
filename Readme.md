@@ -13,12 +13,6 @@ Client)
 - IDE: Android Studio
 - Target Device: Galaxy S7
 
-Server)
-- Stack: Nodejs
-- Language: javascript
-- Framework: Express
-- DataBase: Mysql
-
 <br>
 
 ## 앱 소개
